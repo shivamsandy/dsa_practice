@@ -15,10 +15,12 @@ class Solution {
         }
         int a  = (int)Math.sqrt(n);
         if(a*a==n){
+            dp[n] = 1;
             return 1;
         }
 
          if (dp[n] != -1) {
+             
             return dp[n];
         }
 
