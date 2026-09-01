@@ -1,16 +1,16 @@
 class Solution {
     public int change(int amount, int[] coins) {
-         int n = coins.length;
-        int dp[][] =  new int [amount+1][n];
+         
+        int dp[][] =  new int [amount+1][coins.length];
         
         for(int i=0;i<amount+1;i++){
-            for(int j=0;j<n;j++){
+            for(int j=0;j<coins.length;j++){
                 dp[i][j] =-1;
             }
         }
  
 
-        return coin_change2_memo(coins, amount, n-1,dp);
+        return coin_change2_memo(coins, amount, coins.length-1,dp);
     }
 
 
