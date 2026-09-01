@@ -10,11 +10,9 @@ class Solution {
         }
  
 
-
-        int ans  =  coin_change2_memo(coins, amount, n-1,dp);
-
-        return ans;
+        return coin_change2_memo(coins, amount, n-1,dp);
     }
+
 
      public static int coin_change2_memo(int coins[] ,int amount , int index,int dp[][]){
        
