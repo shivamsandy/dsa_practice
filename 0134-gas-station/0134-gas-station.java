@@ -11,7 +11,7 @@ class Solution {
             totalgas  +=  gas[i];
         }
         if(totalgas<totalcost){
-            System.out.println("journey  not possiblle");
+            // System.out.println("journey  not possiblle");
             return -1;
         }
 
