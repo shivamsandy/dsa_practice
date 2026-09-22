@@ -17,10 +17,10 @@ class Solution {
         if (s.charAt(0) == '-') {
             negative = true;
             start = 1;
-        } 
-        else if (s.charAt(0) == '+') {
+        } else if (s.charAt(0) == '+') {
             start = 1;
         }
+        
 
         for (int i = start; i < s.length(); i++) {
 
