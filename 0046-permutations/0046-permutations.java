@@ -1,5 +1,8 @@
 class Solution {
     public List<List<Integer>> permute(int[] nums) {
+
+        // HARD 
+        
         List<List<Integer>> ans  =   new ArrayList<>();
         List<Integer> list =  new ArrayList<>();
 
@@ -23,16 +26,17 @@ class Solution {
         
 
         for(int i =0;i<n;i++){
+
               if (is_visited[i]) {
                 continue;
             }
-            
+
             list.add(nums[i]);
             is_visited[i] =  true;
             helper(nums,list,ans,is_visited);
-            is_visited[i] = false;
+            is_visited[i] = false;  // backtracking
             list.remove(list.size()-1);
-        }
+        } 
 
 
 
