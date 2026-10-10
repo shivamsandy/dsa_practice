@@ -1,15 +1,8 @@
 class Solution {
     public long countPairs(int[] nums, int k) {
-        // long count=0;
-        // for(int i=0;i<nums.length;i++){
-        //     for(int j=i+1;j<nums.length;j++){
-        //         if((long)(nums[i]*nums[j])%k==0){
-        //             count++;
-        //         }
-        //     }
-        // }
 
-        // return count;
+        // needs to revise 
+      
              HashMap<Integer, Integer> map = new HashMap<>();
         long count = 0;
 
